@@ -10,7 +10,7 @@ from telegram.ext import Updater,CommandHandler
 from game import Game
 
 try:
-	with open('api_token','r') as f:
+	with open('5841942016:AAEUeDRIkS7IdlKKnNWHBme6T1GfKHQGeSM','r') as f:
 		api_token = f.readline().rstrip()
 except IOError:
 	print("Unable to locate api token")
