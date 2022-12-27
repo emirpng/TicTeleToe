@@ -10,6 +10,12 @@ from exceptions import *
 from telegram.ext import Updater,CommandHandler
 from game import Game
 
+if sys.version_info[:2] >= (3, 8):
+    from collections.abc import MutableMapping
+else:
+    from collections import MutableMapping
+
+
 try:
 	with open('5841942016:AAEUeDRIkS7IdlKKnNWHBme6T1GfKHQGeSM','r') as f:
 		api_token = f.readline().rstrip()
